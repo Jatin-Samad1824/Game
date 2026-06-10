@@ -1,0 +1,10 @@
+import random
+user_choice=input("Choose Rock, Paper or Scissors: ")
+computer_choice=random.choice(["Rock", "Paper", "Scissors"])
+print("Computer Choice:", computer_choice)
+if user_choice==computer_choice:
+    print("It's a tie!")
+elif (user_choice=="Rock" and computer_choice=="Scissors") or (user_choice=="Paper" and computer_choice=="Rock") or (user_choice=="Scissors" and computer_choice=="Paper"):
+    print("You win!")
+else:
+    print("You lose!")
